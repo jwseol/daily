@@ -1,21 +1,22 @@
-from random import *
+print("a" + "b")
+print("a", "b")
 
-print(random())  # 0.0 ~ 1.0 미만의 임의의 값 생성
-print(random() * 10)  # 0.0 ~ 10.0 미만의 임의의 값 생성
-print(int(random() * 10)) # 0 ~ 10 미만의 임의의 값 생성
-print(int(random() * 10)) # 0 ~ 10 미만의 임의의 값 생성
-print(int(random() * 10)) # 0 ~ 10 미만의 임의의 값 생성
+# 방법 1
+print("나는 %d살입니다." % 20)
+print("나는 %s을 좋아해요." % "파이썬")
+print("Apple 은 %c로 시작해요." % "A")
+# %s
+print("나는 %s살입니다." % 20)
+print("나는 %s색과 %s색을 좋아해요." % ("2", "빨간"))
 
-print(int(random() * 49 + 1)) # 1 ~ 49 이하의 임의의 값 생성
-print(int(random() * 49 + 1)) # 1 ~ 49 이하의 임의의 값 생성
-print(int(random() * 49 + 1)) # 1 ~ 49 이하의 임의의 값 생성
-print(int(random() * 49 + 1)) # 1 ~ 49 이하의 임의의 값 생성
-print(int(random() * 49 + 1)) # 1 ~ 49 이하의 임의의 값 생성
-print(int(random() * 49 + 1)) # 1 ~ 49 이하의 임의의 값 생성
+# 방법 2 
+print("나는 {}살 입니다.".format(20))
+print("나는 {0}색과 {1}색을 좋아해요>".format("파란", "빨간"))
 
-print(randrange(1, 50)) # 1 ~ 50 미만의 임의의 값 생성
+# 방법 3
+print("나는 {age}살이며, {color}색을 좋아해요.".format(age = 20, color="빨간"))
 
-print(randint(1, 45)) # 1 ~ 45 이하의 임의의 값 생성
-
-date = randint(4,28)
-print("오프라인 스터디 모임 날짜는 매월" + str(date) + "일로 선정되었습니다.")
+# 방법 4
+age = 20
+color = "빨간"
+print(f"나는 {age}살이며, {color}색을 좋아헤요.")
